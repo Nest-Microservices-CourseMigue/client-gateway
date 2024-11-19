@@ -9,10 +9,9 @@ The gateway is the point of comunication between our clients and our services, i
 1. Clone repository
 2. Install dependencies
 3. Create `.env` file cloning the `.env.template`
-4. Start all microservices that Gateway consume
-5. Start project with `npm run start:dev`
-
-## Nats
+4. Init Nats server
 ```
 docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 ```
+5. Start all microservices that Gateway consume
+6. Start project with `npm run start:dev`
