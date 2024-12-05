@@ -15,3 +15,7 @@ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 nats
 ```
 5. Start all microservices that Gateway consume
 6. Start project with `npm run start:dev`
+7. Run command to create image docker prod
+    ```
+    docker build -f dockerfile.prod -t client-gateway .
+    ```
